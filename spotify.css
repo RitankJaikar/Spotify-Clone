@@ -1,0 +1,514 @@
+body{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: black;
+    color: white;
+    overflow: hidden;  /**/
+}
+
+.main{
+    display: flex;
+    height: 100vh;
+    padding: 0.5rem;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+
+.sidebar{
+    background-color: black;
+    width: 420px;
+}
+
+
+.nevigation{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 112px;
+    padding-left: 1.4rem;
+    background-color: #121212;
+    border-radius: 1rem;   /*16px*/
+}
+
+.nav-options{
+    line-height: 3rem;
+}
+
+.nav-options a{
+    font-size: 1rem;
+}
+
+.nav-options a i{
+    font-size: 1.4rem;
+    margin-right: 1rem;
+}
+
+#search{
+    opacity: 0.6;
+}
+
+#search:hover{
+    opacity: 1;
+}
+
+
+.library{
+    margin-top: 0.5rem;
+    height: 100%;  /**/
+    background-color: #121212;
+    border-radius: 1rem;   
+}
+
+.options{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 1.4rem;
+    font-size: 1rem;
+}
+
+.options a img{
+    width: 1.25rem;
+    margin-right: 1rem;
+    position: relative;
+    top: 0.2rem;
+}
+
+.lib-option{
+    opacity: 0.6;
+}
+
+.lib-option:hover{
+    opacity: 1;
+}
+
+.icon a{
+    opacity: 0.6;
+    margin-left: 1.2rem;
+}
+
+.icon a:hover{
+    opacity: 1;
+}
+
+
+.lib-boxes{
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+.box{
+    background-color: #232323;
+    border-radius: 1rem;
+    padding: 1rem;
+    padding-top: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.box .line2{
+    font-size: 0.8rem;
+    padding-bottom: 0.5rem;
+}
+
+.badge{
+    padding: 0.5rem;
+    border-radius: 1rem;
+    font-weight: 700;
+    width: fit-content;     /**/
+}
+
+
+
+
+
+.main-content{
+    margin-left: 0.5rem;
+    background-color: #121212;
+    flex: 1;  /**/
+    border-radius: 1rem;   /**/ 
+    overflow: auto;   /**/
+}
+
+
+.nav-bar{
+    position: sticky;
+    top: 0rem;  /**/
+    display: flex;
+    justify-content: space-between;
+    padding: 0.6rem 1.2rem;
+    background-color: #121212;
+    z-index: 10;   /**/
+}
+
+.left-right{
+    padding-top: 0.3rem;
+}
+
+.left-right a{
+    border-radius: 1rem;
+    color: white;
+    background-color: rgba(9, 3, 2, 0.549);
+    font-size: 1.4rem;
+    padding: 0.2rem 0.6rem;
+    margin-right: 0.5rem;
+}
+
+.nav-bar-options{
+    display: flex;
+    align-items: center;
+}
+
+.nav-bar-options button{
+    margin-left: 0.5rem;
+}
+
+.upgrade{
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    font-weight: 700;
+}
+
+.install{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.228);
+    border-radius: 1rem;
+    font-weight: 700;
+    border: none;
+    padding: 0.5rem 0.7rem;
+}
+
+.install i{
+    font-size: 1.05rem;
+    padding-right: 0.2rem;
+    position: relative;
+    top: 0.1rem;
+}
+
+.user{
+    border-radius: 1rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.242);
+    font-size: 1.05rem;
+    border: none;
+    padding: 0.4rem 0.6rem;
+}
+
+
+.CARDS{
+    padding-left: 1rem;
+}
+
+.cards-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card{
+    background-color: #181818;
+    width: 162px;
+    height: 280px;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    line-height: 1.3rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+
+.card img{
+    border-radius: 0.5rem;
+    width: 100%;
+}
+
+.card-title{
+    font-weight: 700;
+}
+
+.card-info{
+    font-size: 0.8rem;
+    opacity: 0.6;
+}
+
+
+.footer{
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.line{
+    width: 90%;
+    height: 50%;
+    border-top: 0.6px solid white;
+    opacity: 0.3;
+}
+
+.card:hover{
+    background-color: #252525;
+}
+
+
+
+
+
+.music-player{
+    background-color: black;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.info{
+    width: 25%;
+    display: flex;
+    align-items: center;
+}
+
+.info button{
+    border: none;
+    padding: 0;
+    background-color: black;
+}
+
+.info-pic{
+    margin-right: 1rem;
+}
+
+.info-pic img{
+    width: 3rem;
+}
+
+.info-name{
+    margin-right: 1rem;
+}
+
+#song{
+    font-size: 0.8rem;
+    margin: 0.3rem 0;
+    font-weight: 700;
+}
+
+#singer{
+    font-size: 0.6rem;
+    margin: 0.3rem 0;
+    opacity: 0.6;
+}
+
+.info-logo{
+    display: flex;
+    align-items: center;
+}
+
+.info-logo button{
+    margin-right: 0.8rem;
+}
+
+.info-logo img{
+    width: 1.5rem;
+    opacity: 0.6;
+}
+
+.info-logo img:hover{
+    opacity: 1;
+}
+
+
+.player{
+    width: 50%;
+}
+
+.player-icons{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 5rem;
+    padding-top: 0.6rem;
+}
+
+.player-icons button{
+    border: none;
+    background-color: black;
+}
+
+.player-icons button img{
+    height: 1rem;
+    opacity: 0.6;
+}
+
+button.play img{
+    height: 2rem;
+    opacity: 1;
+}
+
+.player-icons img:hover{
+    opacity: 1;
+}
+
+.slider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider label{
+    font-size: 0.75rem;
+    opacity: 0.6;
+}
+
+.slider1{
+    width:75%;
+    appearance: none;   /**/ 
+    background-color: transparent;  
+    cursor: pointer;  
+}
+
+.slider1::-webkit-slider-runnable-track{     /**/ 
+    background-color: rgba(255, 255, 255, 0.251);
+    height: 0.2rem;
+    border-radius: 100px;
+}
+
+.slider1::-webkit-slider-thumb{    /**/ 
+    appearance: none;
+    height: 0.8rem;
+    width: 0.8rem;
+    background-color: #1bd760;
+    border-radius: 50%;
+    margin-top: -5px;
+}
+
+
+.player-options{
+    width: 25%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.player-options button{
+    border: none;
+    padding: 0;
+    background-color: black;
+    margin-right: 1rem;
+}
+
+.player-options img{
+    width: 1.7rem;
+    opacity: 0.6;
+}
+
+.player-options img:hover{
+    opacity: 1;
+}
+
+.resize img{
+    width: 1.2rem;
+    opacity: 0.4;
+}
+
+.resize img:hover{
+    opacity: 0.7;
+}
+
+#volRange{
+    margin-right: 1.5rem;
+    width: 6rem;
+}
+
+#volRange::-webkit-slider-thumb{
+    background-color: rgba(255, 255, 255, 0.904);
+    height: 0.6rem;
+    width: 0.6rem;
+    margin-top: -3px;
+}
+
+
+
+
+
+
+button:hover, .card:hover{
+    cursor: pointer;
+}
+
+.bigger-option:hover{
+    transform: scale(1.1);
+}
+
+
+/* Adjusting items accordig to screen width */
+@media (max-width: 1140px) {   /*To hide Explore premium and forward button*/
+    .hide{
+        display: none;
+    }
+    .player{
+        width: 65%;
+    }
+    .sidebar{
+        width: 350px;
+    }
+}
+
+@media (max-width: 825px) {
+    .main,.main-content{
+        padding: 0;
+        margin: 0;
+        border-radius: 0px;
+    }
+    .main-content::-webkit-scrollbar{
+        display: none;
+    }
+    .player{
+        width: 100%;
+    }
+    .player-options .hide-o{
+        display: none;
+    }
+    .sidebar{
+        display: none;
+    }
+}
+
+@media (max-width: 580px){
+    .player-options{
+        display: none;
+    }
+    .card{
+        width: 123px;
+        height: 240px;
+    }
+}
+
+
+/* custom scrollbar */
+/* width */
+.main-content::-webkit-scrollbar {
+    width: 10px;    
+}
+
+/* Track */
+.main-content::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+    border-radius: 10px;   
+}
+
+/* Handle */
+.main-content::-webkit-scrollbar-thumb {
+    background: #888;   
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+.main-content::-webkit-scrollbar-thumb:hover {
+    background: #555;   
+}
